@@ -1,12 +1,8 @@
-class Pessoa:
-    tamanho_cpf = 11
+class Funcionario:
+    prefixo = 'Instrutor'
 
-p = Pessoa()
+    @classmethod
+    def info(cls):
+        return f'Esse é um {cls.prefixo}'
 
-print(p.tamanho_cpf)
-
-p.tamanho_cpf = 12
-
-print(p.tamanho_cpf)
-
-print(Pessoa.tamanho_cpf)
+    print(prefixo)
