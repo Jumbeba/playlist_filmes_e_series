@@ -1,8 +1,3 @@
-class Funcionario:
-    prefixo = 'Instrutor'
+lista = [1, 2, 4, 5]
 
-    @classmethod
-    def info(cls):
-        return f'Esse é um {cls.prefixo}'
-
-    print(prefixo)
+print(repr(lista))
