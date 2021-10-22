@@ -1,3 +1,11 @@
-lista = [1, 2, 4, 5]
+from collections.abc import Sized
 
-print(repr(lista))
+class MinhaListagem(Sized):
+    def __init__(self, descricao):
+        self.descricao = descricao
+
+    def __str__(self):
+        return self.descricao
+
+lista = MinhaListagem()
+print(lista)
